@@ -1,6 +1,6 @@
 # lekreminder
 
-Lek reminder bot
+Discord Bot für Erinnerungen an Leistungskontrollen in der Schule
 
 ## lmao
 
