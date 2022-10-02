@@ -84,8 +84,8 @@ button {
   outline: none;
   border: none;
   background: linear-gradient(145deg, #363636, #2d2d2d);
-  box-shadow:  20px 20px 60px #1b1b1b,
-               -20px -20px 60px #494949;
+  box-shadow:  15px 15px 30px #1b1b1b,
+               -15px -15px 30px #494949;
   color: #ae00ff;
   text-transform: uppercase;
   letter-spacing: 2px;
