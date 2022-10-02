@@ -204,6 +204,8 @@ button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-chi
   border-color: #9b9b9b;
   margin-top: 10px;
   background-color: #323232;
+  width: 100%;
+  width: 180px;
 }
 
 .subject {
