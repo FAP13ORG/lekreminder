@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="./script.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +17,7 @@
     <div class="headlines">
       <div class="row text-center d-flex align-content-center">
         <div class="col-md-12">
-          <h1 class="lg-heading"><span class="text-secondary">LEK</span> Reminder</h1>
+          <h1 class="lg-heading"><span>LEK</span> Reminder</h1>
         </div>
       </div>
       <div class="row text-center d-flex align-content-center">
@@ -28,58 +29,59 @@
 
     <!-- input fields: -->
     <div class="inputs">
-      <div class="row">
-        <div class="col-md-12">
-          <form action="/add" method="POST">
-            <div class="row justify-content-center">
-              <div class="col-md-2">
-                <div class="form-group field">
-                  <input required="" placeholder="Name" class="form-field" type="input" />
-                  <label class="form-label" for="name">Subject</label>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <div class="form-group field">
-                  <input required="" placeholder="topic" class="form-field" type="input" />
-                  <label class="form-label" for="topic">Topic</label>
-                </div>
-              </div>
+      <form>
+        <div class="form-row">
+          <div class="col-md-2">
+            <div class="form-group field">
+              <input required="" placeholder="Name" class="form-field" type="input" id="name" />
+              <label class="form-label" for="name">Subject</label>
             </div>
-            <div class="row justify-content-center">
-              <div class="col-md-2">
-                <div class="form-group field">
-                  <input required="" placeholder="Date" class="form-field" type="date" />
-                  <label class="form-label" for="date">Date</label>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <div class="form-group field">
-                  <label class="form-label" for="periods">Period</label>
-                  <select class="period-select" name="periods" id="">
-
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </select>
-                </div>
-              </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-group field">
+              <input required="" placeholder="topic" class="form-field" type="input" id="topic" />
+              <label class="form-label" for="topic">Topic</label>
             </div>
-            <!-- submit button: -->
-            <div class="row justify-content-center">
-              <div class="col-md-1">
-                <div class="submit-btn">
-                  <button type="submit">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span> Add LK
-                  </button>
-                </div>
-              </div>
-          </form>
+          </div>
+          <div class="col-md-2">
+            <div class="form-group field">
+              <input required="" placeholder="details" class="form-field" type="input" id="details" />
+              <label class="form-label" for="details">Details</label>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-group field">
+              <input required="" placeholder="Date" class="form-field" type="date" id="date" />
+              <label class="form-label" for="date">Date</label>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-group field">
+              <label class="form-label" for="periods">Period</label>
+              <select class="period-select" name="periods" id="periods">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </div>
         </div>
-      </div>
+
+        <!-- submit button: -->
+        <div class="form-row justify-content-center">
+          <div class="col-md-4">
+            <div class="submit-btn">
+              <button type="button" onclick="sendLKRequest()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> Add LK
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
   </body>
 </html>
