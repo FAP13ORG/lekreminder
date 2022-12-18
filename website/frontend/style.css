@@ -84,7 +84,6 @@ body {
 .form-field:required,
 .form-field:invalid {
   box-shadow: none;
-}
   position: relative;
   padding: 20px 0 0;
   margin-top: 10px;
