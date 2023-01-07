@@ -1,19 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById('name').addEventListener('input', function () {
-    this.style.borderColor = '';
-  });
-  document.getElementById('topic').addEventListener('input', function () {
-    this.style.borderColor = '';
-  });
-  document.getElementById('details').addEventListener('input', function () {
-    this.style.borderColor = '';
-  });
-  document.getElementById('date').addEventListener('input', function () {
-    this.style.borderColor = '';
-  });
-  document.getElementById('periods').addEventListener('input', function () {
-    this.style.borderColor = '';
-  });
+  let ids = ['name', 'topic', 'details', 'date', 'periods'];
+
+  for (id of ids) {
+    document.getElementById(id).addEventListener('input', function () {
+      this.style.borderColor = '';
+    });
+  }
 });
 
 function sendLKRequest() {
