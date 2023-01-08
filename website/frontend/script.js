@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function sendLKRequest() {
-  const apiKey = '{{postmanApikey}}';
+  const apiKey = 'hIgUvOhRgU62836Vickb7268';
   const fach = document.getElementById('name').value;
   const thema = document.getElementById('topic').value;
   const details = document.getElementById('details').value;
