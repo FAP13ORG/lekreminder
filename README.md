@@ -1,6 +1,6 @@
 # lekreminder
 
-Discord Bot für Erinnerungen an Leistungskontrollen in der Schule
+Webinterface-Frontend für die Erinnerungen an Leistungskontrollen in der Schule
 
 ## Interface overview
 
