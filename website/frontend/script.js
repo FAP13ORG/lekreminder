@@ -29,6 +29,12 @@ function sendLKRequest() {
     return;
   }
 
+  // Reset the input fields
+  let fields = ['name', 'topic', 'details', 'date', 'periods'];
+  for (const field of fields) {
+    document.getElementById(field).value = '';
+  }
+
   // Format the date value as "yyyy-mm-dd"
   const formattedDate = new Date(datum).toISOString().slice(0, 10);
 
