@@ -245,15 +245,22 @@ button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-chi
   transition-delay: none;
 }
 
+.submit-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
 .submit-btn {
   margin-top: 30px;
   grid-area: submit;
 }
 
 .inputs {
+  aspect-ratio: 1/1;
   margin-top: 200px;
   grid-area: inputs;
-  padding: 50px;
+  padding: 50px 70px;
   border-radius: 50px;
   background: #323232;
   box-shadow: 20px 20px 60px #252525, -20px -20px 60px #3f3f3f;
@@ -266,58 +273,6 @@ button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-chi
     'submit submit';
   gap: 20px;
   justify-items: center;
-}
-
-.period-select {
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
-  border-color: #9b9b9b;
-  margin-top: 10px;
-  background-color: #323232;
-  width: 100%;
-  width: 180px;
-}
-
-.subject {
-  grid-area: subject;
-}
-.topic {
-  grid-area: topic;
-}
-.date {
-  grid-area: date;
-}
-.period {
-  grid-area: period;
-}
-.inputs {
-  margin-top: 200px;
-  grid-area: inputs;
-  padding: 50px;
-  border-radius: 50px;
-  background: #323232;
-  box-shadow: 20px 20px 60px #252525, -20px -20px 60px #3f3f3f;
-}
-.inputs form {
-  display: grid;
-  grid-template-areas:
-    'subject topic'
-    'date period'
-    'submit submit';
-  gap: 20px;
-  justify-items: center;
-}
-
-.period-select {
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
-  border-color: #9b9b9b;
-  margin-top: 10px;
-  background-color: #323232;
-  width: 100%;
-  width: 180px;
 }
 
 .subject {
@@ -333,14 +288,15 @@ button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-chi
   grid-area: period;
 }
 
-.headlines {
-  margin-top: 50px;
-  grid-area: headline;
-  font-weight: 600;
-  background-image: linear-gradient(to left, #ae00af, #700597);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+.period-select {
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  border-color: #9b9b9b;
+  margin-top: 10px;
+  background-color: #323232;
+  width: 100%;
+  width: 180px;
 }
 
 .headlines {
