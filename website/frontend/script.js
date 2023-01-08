@@ -32,8 +32,11 @@ function sendLKRequest() {
   // Format the date value as "yyyy-mm-dd"
   const formattedDate = new Date(datum).toISOString().slice(0, 10);
 
-  const url = `https://api.minesort.de:8080/fap13/postlekinfos?apikey=${apiKey}&fach=${fach}&datum=${formattedDate}&thema=${thema}&block=${block}&details=${details}`;
-
+  const url =
+    `https://api.minesort.de:8080/fap13/postlekinfos?apikey=${apiKey}&fach=${fach}&datum=${formattedDate}&thema=${thema}&block=${block}&details=${details}`.replace(
+      / /g,
+      '+'
+    );
   fetch(url, {
     method: 'GET',
   })
