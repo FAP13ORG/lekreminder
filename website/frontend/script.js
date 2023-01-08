@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   let ids = ['name', 'topic', 'details', 'date', 'periods'];
 
-  for (id of ids) {
+  for (const id of ids) {
     document.getElementById(id).addEventListener('input', function () {
       this.style.borderColor = '';
     });
