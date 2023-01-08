@@ -11,14 +11,14 @@
 
   <body>
     <div class="headlines">
-      <div class="row text-center d-flex align-content-center">
-        <div class="col-md-12">
-          <h1 class="lg-heading"><span>LEK</span> Reminder</h1>
+      <div>
+        <div>
+          <h1 class="heading"><span>LEK</span> Reminder</h1>
         </div>
       </div>
-      <div class="row text-center d-flex align-content-center">
-        <div class="col-md-12">
-          <h2 class="sm-heading">Add reminders for your tests in school</h2>
+      <div>
+        <div>
+          <h2 class="heading">Add reminders for your tests in school</h2>
         </div>
       </div>
     </div>
@@ -26,32 +26,32 @@
     <!-- input fields: -->
     <div class="inputs">
       <form>
-        <div class="form-row">
-          <div class="col-md-2">
+        <div>
+          <div>
             <div class="form-group field">
               <input required="" placeholder="Name" class="form-field" type="input" id="name" />
               <label class="form-label" for="name">Subject</label>
             </div>
           </div>
-          <div class="col-md-2">
+          <div>
             <div class="form-group field">
               <input required="" placeholder="topic" class="form-field" type="input" id="topic" />
               <label class="form-label" for="topic">Topic</label>
             </div>
           </div>
-          <div class="col-md-2">
+          <div>
             <div class="form-group field">
               <input required="" placeholder="details" class="form-field" type="input" id="details" />
               <label class="form-label" for="details">Details</label>
             </div>
           </div>
-          <div class="col-md-2">
+          <div>
             <div class="form-group field">
               <input required="" placeholder="Date" class="form-field" type="date" id="date" />
               <label class="form-label" for="date">Date</label>
             </div>
           </div>
-          <div class="col-md-2">
+          <div>
             <div class="form-group field">
               <label class="form-label" for="periods">Period</label>
               <select class="period-select" name="periods" id="periods">
@@ -65,16 +65,14 @@
         </div>
 
         <!-- submit button: -->
-        <div class="form-row justify-content-center">
-          <div class="col-md-4">
-            <div class="submit-btn">
-              <button type="button" onclick="sendLKRequest()">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span> Add LK
-              </button>
-            </div>
+        <div class="submit-wrapper">
+          <div class="submit-btn">
+            <button type="button" onclick="sendLKRequest()">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span> Add LK
+            </button>
           </div>
         </div>
       </form>
