@@ -2,7 +2,6 @@
 
 Discord Bot für Erinnerungen an Leistungskontrollen in der Schule
 
-## lmao
+## Interface overview
 
-> lul
-
+![Interface](./images/interface.png)
