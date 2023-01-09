@@ -1,3 +1,5 @@
+const fieldIds = ['name', 'topic', 'details', 'date', 'periods'];
+
 document.addEventListener('DOMContentLoaded', function () {
   let ids = ['name', 'topic', 'details', 'date', 'periods'];
 
