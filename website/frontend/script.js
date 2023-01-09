@@ -47,14 +47,11 @@ function sendLKRequest() {
     mode: 'no-cors',
   })
     .then((response) => {
-      if (response.includes('done')) {
+      if (response == 'done') {
         // Reset the input fields
-        document.getElementById('name').value = '';
-        document.getElementById('topic').value = '';
-        document.getElementById('details').value = '';
-        document.getElementById('date').value = '';
-        document.getElementById('periods').value = '';
-
+        for (const field of fieldIds) {
+          document.getElementById(field).value = '';
+        }
         // Show a success alert
         alert('LK request sent successfully!');
       } else {
