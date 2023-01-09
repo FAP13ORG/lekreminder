@@ -20,7 +20,6 @@ function sendLKRequest() {
   if (!fach || !thema || !details || !datum || !block) {
     // If any field is empty, highlight it and return
     const fields = [fach, thema, details, datum, block];
-    const fieldIds = ['name', 'topic', 'details', 'date', 'periods'];
     for (let i = 0; i < fields.length; i++) {
       if (!fields[i]) {
         document.getElementById(fieldIds[i]).style.borderColor = 'red';
