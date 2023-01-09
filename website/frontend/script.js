@@ -17,9 +17,9 @@ function sendLKRequest() {
   const block = document.getElementById('periods').value;
 
   // Check if all fields have a value
-  if (!fach || !thema || !details || !datum || !block) {
+  const fields = [fach, thema, details, datum, block];
+  if (!fields.every(Boolean)) {
     // If any field is empty, highlight it and return
-    const fields = [fach, thema, details, datum, block];
     for (let i = 0; i < fields.length; i++) {
       if (!fields[i]) {
         document.getElementById(fieldIds[i]).style.borderColor = 'red';
