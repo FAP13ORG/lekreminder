@@ -1,10 +1,8 @@
 const fieldIds = ['name', 'topic', 'details', 'date', 'periods'];
 
 document.addEventListener('DOMContentLoaded', function () {
-  let ids = ['name', 'topic', 'details', 'date', 'periods'];
-
-  for (const id of ids) {
-    document.getElementById(id).addEventListener('input', function () {
+  for (const field of fieldIds) {
+    document.getElementById(field).addEventListener('input', function () {
       this.style.borderColor = '';
     });
   }
