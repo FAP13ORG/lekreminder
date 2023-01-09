@@ -30,8 +30,7 @@ function sendLKRequest() {
   }
 
   // Reset the input fields
-  let fields = ['name', 'topic', 'details', 'date', 'periods'];
-  for (const field of fields) {
+  for (const field of fieldIds) {
     document.getElementById(field).value = '';
   }
 
