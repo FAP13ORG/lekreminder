@@ -59,6 +59,6 @@ function sendLKRequest() {
     })
     .catch((error) => {
       // Show an error alert
-      alert('There was an error sending the LK request: ' + error);
+      alert('There was an error sending the LK request: \n' + error);
     });
 }
