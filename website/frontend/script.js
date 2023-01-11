@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function sendLKRequest() {
-  const apiKey = 'hIgUvOhRgU62836Vickb7268';
   const fach = document.getElementById('name').value;
   const thema = document.getElementById('topic').value;
   const details = document.getElementById('details').value;
@@ -37,7 +36,7 @@ function sendLKRequest() {
   const formattedDate = new Date(datum).toISOString().slice(0, 10);
 
   const url =
-    `https://api.minesort.de:8080/fap13/postlekinfos?apikey=${apiKey}&fach=${fach}&datum=${formattedDate}&thema=${thema}&block=${block}&details=${details}`.replace(
+    `https://api.minesort.de:8080/fap13/postlekinfos?fach=${fach}&datum=${formattedDate}&thema=${thema}&block=${block}&details=${details}`.replace(
       / /g,
       '+'
     );
