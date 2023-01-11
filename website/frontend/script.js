@@ -9,11 +9,12 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function sendLKRequest() {
-  const fach = document.getElementById('name').value;
-  const thema = document.getElementById('topic').value;
-  const details = document.getElementById('details').value;
-  const datum = document.getElementById('date').value;
-  const block = document.getElementById('periods').value;
+  // Get values and replace space with +
+  const fach = document.getElementById('name').value.replace(/\s+/g, '+');
+  const thema = document.getElementById('topic').value.replace(/\s+/g, '+');
+  const details = document.getElementById('details').value.replace(/\s+/g, '+');
+  const datum = document.getElementById('date').value.replace(/\s+/g, '+');
+  const block = document.getElementById('periods').value.replace(/\s+/g, '+');  
 
   // Check if all fields have a value
   const fields = [fach, thema, details, datum, block];
@@ -35,11 +36,11 @@ function sendLKRequest() {
   // Format the date value as "yyyy-mm-dd"
   const formattedDate = new Date(datum).toISOString().slice(0, 10);
 
-  const url =
-    `https://api.minesort.de:8080/fap13/postlekinfos?fach=${fach}&datum=${formattedDate}&thema=${thema}&block=${block}&details=${details}`.replace(
-      / /g,
-      '+'
-    );
+  // Backend URL
+  //TODO: change to json transfer
+  const url = `https://api.minesort.de:8080/fap13/postlekinfos?fach=${fach}&datum=${formattedDate}&thema=${thema}&block=
+  ${block}&details=${details}`.replace(g, '+');
+  
   fetch(url, {
     method: 'GET',
     mode: 'no-cors',
