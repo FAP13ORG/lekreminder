@@ -26,6 +26,14 @@ function sendLKRequest() {
       }
     }
     return;
+  } 
+
+  // Check if values contains special charackters
+  for (let i = 0; i < fields.length; i++) {
+    if(!fields[i].match(/[^a-zA-Z0-9\s]/)) {
+      alert("Input contains special characters, please remove them.");
+      return;
+    }
   }
 
   // Reset the input fields
